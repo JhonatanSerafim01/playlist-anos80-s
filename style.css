@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,35,9,1) 100%, rgba(0,212,255,1) 100%);
+}
+.musica{
+    position: fixed;
+    left: 40%;
+    bottom: 10%;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+   
+   
+}
+.musicas h1 {
+    text-align: center;
+}
+.disco{
+    width: 300px;
+}
+
+.disco img{
+    width: 100%;
+   
+}
+
+.img-active{
+
+    border-radius: 50%;
+
+}
+.musicas{
+    color: white;
+    position: fixed;
+    left: 100px;
+    border-radius: 10px;
+    
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 15px;
+}
+.disco-gira{
+    animation: disco-spin  5s linear infinite;
+}
+
+@keyframes disco-spin {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.player{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.player button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+}
+.player button:hover{
+    background-color: #ffffff62;
+    border-radius: 50%;
+}
+.play-music{
+
+    font-size: 25px;
+    cursor: pointer;
+}
+.sound-list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+.sound{
+    
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.img-sound{
+    width: 50px;
+    position: relative;
+}
+.img-sound img{
+    width: 100%;
+    border-radius: 10px;
+}
+.txt-sound{
+
+
+    h2{
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.918);
+    }
+
+    p{
+        color:rgba(255, 255, 255, 0.733);
+    }
+
+}
+.sound:hover{
+     background-color: rgba(255, 255, 255, 0.562);
+     border-radius: 10px;
+     
+
+     
+}
+.sound-active:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+     border-radius: 10px;
+}
+.play-sound{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: none;
+
+}
+
+.img-sound:hover{
+    background-color: transparent;
+
+
+    img{
+    filter: brightness(70%);
+    }
+
+    .play-sound{
+        display: block;
+    }
+  
+
+
+    
+}
+
+.img-sound:active{
+
+
+    .sound{
+        background-color: rgba(255, 255, 255, 0.562);
+        border-radius: 10px;
+    }
+}
+#progress-bar {
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Estilo para navegadores modernos */
+#progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
