@@ -9,8 +9,10 @@ let progress = 0;
                 loadingText.innerText = "Carregando... " + progress + "%";
                 setTimeout(updateProgress, 30); 
             } else {
-                window.location.href = "index.html"; 
+                window.location.href = "playlist.html"; 
             }
         }
 
         updateProgress();
+
+        
