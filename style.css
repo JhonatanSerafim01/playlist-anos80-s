@@ -212,15 +212,19 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,35,9,1) 100%, rgb
     }
     .musica{
         position: absolute;
-        top: 100%;
+        top: 115%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     #progress-bar {
-        width: 400px;
+        width: 350px;
     }
     
     .musicas{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     }
 }
