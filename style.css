@@ -202,3 +202,25 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,35,9,1) 100%, rgb
     border-radius: 50%;
     cursor: pointer;
 }
+@media (max-width:900px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+    }
+    .musica{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #progress-bar {
+        width: 400px;
+    }
+    
+    .musicas{
+    position: absolute;
+    }
+}
